@@ -1,0 +1,23 @@
+All code Challanges can be found on leetcode and there id and name will be added along with my solutions to the problem
+43. Multiply Strings medium:
+   def multiply(self, num1: str, num2: str) -> str:
+        num1AsInt = int(num1)
+        num2AsInt = int(num2)
+        aboutToBeStr = num1AsInt * num2AsInt
+        finalStr = str(aboutToBeStr)
+        return finalStr
+        
+747. Largest Number At Least Twice of Others easy:
+    def dominantIndex(self, nums: List[int]) -> int:
+        maxValue = max(nums)
+        newList = [x for x in nums if x != 0 and x != maxValue]
+        
+        for x in newList:
+            if maxValue / x < 2:
+                return -1
+            
+        
+        return nums.index(maxValue)
+      
+      
+      
