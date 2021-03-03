@@ -18,6 +18,15 @@ All code Challanges can be found on leetcode and there id and name will be added
             
         
         return nums.index(maxValue)
+        
+        
+1108. Defaning an IP address:
+      def defangIPaddr(self, address: str) -> str:
+        defanged_IP = address.replace(".", "[.]")
+        return defanged_IP
+        
+        
+        
       
       
       
