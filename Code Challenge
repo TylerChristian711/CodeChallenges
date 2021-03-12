@@ -39,7 +39,20 @@ All code Challanges can be found on leetcode and there id and name will be added
              elif  num % 2 == 0:
                   num = num / 2 
                   stepCount += 1 
-        return stepCount    
+        return stepCount
+        
+        
+        
+1287 Element Appearing More than 25% in Sorted Array
+def findSpecialInteger(arr: [int]) -> int:
+    counter = 0
+    num = arr[0]
+    for x in arr:
+        curr_num = arr.count(x)
+        if curr_num > counter:
+            counter = curr_num
+            num = x
+    return num
       
       
 CODESIGNLE CHALLENGES:
