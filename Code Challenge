@@ -43,7 +43,7 @@ All code Challanges can be found on leetcode and there id and name will be added
         
         
         
-1287 Element Appearing More than 25% in Sorted Array
+1287 Element Appearing More than 25% in Sorted Array:
 def findSpecialInteger(arr: [int]) -> int:
     counter = 0
     num = arr[0]
@@ -53,6 +53,22 @@ def findSpecialInteger(arr: [int]) -> int:
             counter = curr_num
             num = x
     return num
+    
+    
+1323. Maximum 69 Number:    def maximum69Number (self, num: int) -> int:
+# this is so we can call replace() on our nums and change the first 6 with 9 and then turn that back to int
+        string_num = str(num)
+
+# I will use the replace() function to change the first six we find in our string
+# and turn it into a 9 in the highest place to always get the highest possible number
+        
+
+        final_number = string_num.replace("6", "9",1)
+        # casting the final number back into an int 
+        final_as_int = int(final_number)
+
+        return final_as_int
+    
       
       
 CODESIGNLE CHALLENGES:
